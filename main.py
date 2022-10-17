@@ -1,6 +1,7 @@
 """
 License: Apache
 Organization: UNIR
+Autores: Oscar Fernandez Alzate
 """
 
 import os
@@ -9,18 +10,18 @@ import sys
 DEFAULT_FILENAME = "words.txt"
 DEFAULT_DUPLICATES = False
 
-
+#Ordena la lista de los items
 def sort_list(items, ascending=True):
     if not isinstance(items, list):
         raise RuntimeError(f"No puede ordenar {type(items)}")
 
     return sorted(items, reverse=(not ascending))
 
-
+#Elimina items que estan duplicados
 def remove_duplicates_from_list(items):
     return list(set(items))
 
-
+#Funcion principal
 if __name__ == "__main__":
     filename = DEFAULT_FILENAME
     remove_duplicates = DEFAULT_DUPLICATES
