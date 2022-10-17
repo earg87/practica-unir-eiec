@@ -20,6 +20,10 @@ def sort_list(items, ascending=True):
 def remove_duplicates_from_list(items):
     return list(set(items))
 
+def remove_last_item(items):
+    del items[-1]
+    return items
+
 
 if __name__ == "__main__":
     filename = DEFAULT_FILENAME
